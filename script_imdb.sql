@@ -220,14 +220,3 @@ CREATE TABLE tb_filProd (
     PRIMARY KEY (fp_fil_id, fp_prod_id),
     FOREIGN KEY (fp_fil_id) REFERENCES tb_filme (fil_id),
     FOREIGN KEY (fp_prod_id) REFERENCES tb_produtora (proda_id));
-    
-    
--- -------------------------------------------------
--- INSERÇÃO DE DADOS db_imdb | DQL - DATA QUERY LANGUAGE
--- -------------------------------------------------
-USE db_imdb;
-SHOW TABLES;
-
-INSERT INTO tb_pais
-	VALUES 
-		(
